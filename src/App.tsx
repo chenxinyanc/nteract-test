@@ -5,10 +5,9 @@ import MarkdownRender from '@nteract/markdown';
 const App: React.FC = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <MarkdownRender source="test **test***content*" />
-        <MarkdownRender source="test **test** *content*" />
-      </header>
+      <div style={{ border: "1px solid red" }}>
+        <MarkdownRender source={"test\n```ts\ncode fence\n```"} />
+      </div>
     </div>
   );
 }
